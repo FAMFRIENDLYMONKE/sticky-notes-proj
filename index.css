@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  h1 {
+    font-family: 'DM Serif Display', cursive;
+    color: #333;
+    text-align: center;
+  }
+  
+  .input-area {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  #note-input {
+    flex: 1;
+    padding: 10px;
+    background-color: #fefec0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  #add-note {
+    background-color: #11ff00;
+    border: none;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  #add-note:hover {
+    transform: scale(1.1);
+  }
+  
+  #notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .note {
+    position: relative;
+    width: 200px;
+    min-height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+  }
+  
+  .note:nth-child(odd) {
+    background-color: #d1e1ff;
+  }
+  
+  .note:nth-child(even) {
+    background-color: #fefffe;
+  }
+  
+  .delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #e54b3a;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
